@@ -44,7 +44,7 @@ var emoS = "";
 userTxt.addEventListener('input', function(e){
     emoS = "";
     let userGave = "";
-    if(e.target.value === "." || e.target.value === "," || e.target.value === "?" || e.target.value === "!" || e.target.value === "@" || e.target.value === "#" || e.target.value === "&" || e.target.value === "*"){
+    if(e.target.value === "." || e.target.value === "," || e.target.value === "?" || e.target.value === "!" || e.target.value === "@" || e.target.value === "#" || e.target.value === "&" || e.target.value === "*" || e.target.value === "$"){
         userGave = e.target.value;
     }
     else{
@@ -227,6 +227,9 @@ userTxt.addEventListener('input', function(e){
                 break;
             case "&":
                 emoS += "🐚"; 
+                break;
+            case "$":
+                emoS += "💰"; 
                 break;
           }
     }
