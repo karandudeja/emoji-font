@@ -18,7 +18,7 @@ body{
   
   #emojifiedMsg{
     font-size: 2.4em;
-    line-height: 2em;
+    line-height: 2.1em;
     padding: 0 3em;
   }
   
@@ -96,8 +96,8 @@ body{
         width: 90%;
     }
     #emojifiedMsg{
-        font-size: 1.8em;
-        line-height: 1.8em;
+        font-size: 1.7em;
+        line-height: 1.9em;
         padding: 0;
     }
   }

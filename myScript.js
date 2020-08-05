@@ -202,10 +202,6 @@ userTxt.addEventListener('input', function(e){
     emojifiedTxt.innerHTML = emoS;
 }, false);
 
-//uppercase characters NOT in use
-/*A🗼⛰️ B🍤🅱️ C🌜🌊 D🍤🌛 E🏯 F🎋🎏 G🌀 H I🚹 J🎷K🎿⏮️ L M〽️⚖️ N📉🎢<br/><br/>O🍩 P Q🍭🍳R S T U V W〰️ X✂️🛠️⚒️⚔️ Y Z💤*/
-
-//numbers 0123456789 ⚫🕐🕑🕒🕓🕔🕕🕖🕗🕘
 
 userTxt.addEventListener('focus', () => {
     changeHeadingText();
@@ -230,16 +226,26 @@ function changeHeadingText(){
     headingText.innerHTML = newHeading;
 }
 
+//lowercase characters
+/*a🐊🔓 b💪🗽 c🗜️ d🍶 e🍥 f🎋🌾 g🐬🦈 h🐪🐢 i📍 j🏒 k🎿🎬  l🕯️ m⚖️🎹 n⛩️🎵 o📀 p🌵🚏🚩 q📭 r🥀🌈🌱 s💲♨️⚡ t🍌 u⛎👅 v💎🔻w🔱 x✂️🛠️⚒️⚔️ 󠁧󠁢󠁳󠁣󠁴 y🏆🤸‍♂️ z💤*/
+
+//uppercase characters NOT in use
+/*A🗼⛰️ B🍤🅱️ C🌜🌊 D🍤🌛 E🏯 F🎋🎏 G🌀 H I🚹 J🎷K🎿⏮️ L M〽️⚖️ N📉🎢<br/><br/>O🍩 P Q🍭🍳R S T U V W〰️ X✂️🛠️⚒️⚔️ Y Z💤*/
+
+//numbers 0123456789 ⚫🕐🕑🕒🕓🕔🕕🕖🕗🕘
 
 
-function checkString(str) {
-  console.log("checkString called...");
-  if (str.charAt(str.length - 1) === "�") {
-    console.log("have to remove � !!!");
-    //newEmojiString = emojiString.slice(0, -1);
-    //emojiString = newEmojiString;
-  }
-}
+
+
+
+// function checkString(str) {
+//   console.log("checkString called...");
+//   if (str.charAt(str.length - 1) === "�") {
+//     console.log("have to remove � !!!");
+//     //newEmojiString = emojiString.slice(0, -1);
+//     //emojiString = newEmojiString;
+//   }
+// }
 
 //as of before 4 Aug 2020, using keyup and keydown
 /*userTxt.addEventListener("keydown", function (event) {
@@ -405,8 +411,5 @@ function checkString(str) {
   //console.log(emojifiedTxt);
 });
 */
-
-//lowercase characters
-/*a🐊🔓 b💪🗽 c🗜️ d🍶 e🍥 f🎋🌾 g🐬🦈 h🐪🐢 i📍 j🏒 k🎿🎬  l🕯️ m⚖️🎹 n⛩️🎵 o📀 p🌵🚏🚩 q📭 r🥀🌈🌱 s💲♨️⚡ t🍌 u⛎👅 v💎🔻w🔱 x✂️🛠️⚒️⚔️ 󠁧󠁢󠁳󠁣󠁴 y🏆🤸‍♂️ z💤*/
 
 
