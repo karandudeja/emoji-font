@@ -43,7 +43,13 @@ function bgWhite(){
 var emoS = "";
 userTxt.addEventListener('input', function(e){
     emoS = "";
-    let userGave = e.target.value.toLowerCase();
+    let userGave = "";
+    if(e.target.value === "." || e.target.value === "!"){
+        userGave = e.target.value;
+    }
+    else{
+        userGave = e.target.value.toLowerCase();
+    }
     userTxt.value = userGave;
     for(let i =0; i < userGave.length; i++){
         switch (userGave[i]) {
@@ -203,6 +209,7 @@ userTxt.addEventListener('input', function(e){
                 break;
             case ".":
                 emoS += "🚷";
+                alert("hey!");
                 break;
             case "!":
                 emoS += "🕴️";
