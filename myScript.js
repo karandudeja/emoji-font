@@ -48,7 +48,7 @@ userTxt.addEventListener('input', function(e){
     for(let i =0; i < userGave.length; i++){
         switch (userGave[i]) {
             case " ":
-              emoS += "&nbsp;&nbsp;&nbsp;";
+              emoS += "&nbsp;&nbsp;&nbsp;&nbsp;";
               break;
             //////////// lowercase //////
             case "a":
@@ -196,7 +196,32 @@ userTxt.addEventListener('input', function(e){
                 emoS += "🕘";
                 //console.log("entered z");
                 break;
-            
+            ////////// special characters ////////
+            case "?":
+                emoS += "❓";
+                //console.log("entered z");
+                break;
+            case ".":
+                emoS += "🚷";
+                break;
+            case "!":
+                emoS += "🕴️";
+                break;
+            case "*":
+                emoS += "❄️";
+                break;
+            case "#":
+                emoS += "#️⃣";
+                break;
+            case ",":
+                emoS += "🌪️ &nbsp;"; 
+                break;
+            case "@":
+                emoS += "🤜"; 
+                break;
+            case "&":
+                emoS += "🐚"; 
+                break;
           }
     }
     emojifiedTxt.innerHTML = emoS;
