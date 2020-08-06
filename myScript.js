@@ -114,7 +114,7 @@ userTxt.addEventListener('input', function(e){
               //console.log("entered n");
               break;
             case "o":
-              emoS += "📀";
+              emoS += "🍩";
               //console.log("entered o");
               break;
             case "p":
