@@ -38,15 +38,15 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 0.8em;
     margin-top: 1.5em;
-    width: 300px;
+    width: 280px;
     height: 30px;
     border-radius: none;
     border-left: none;
     border-top: none;
     border-right: none;
     border-bottom: 1px solid #ccc;
-    padding-left: 1em;
     outline: none;
+    text-align: center;
   }
   
   #bolded{
@@ -91,7 +91,8 @@ body{
         border-radius: 10px;
     }
     #textIn{
-        width: 90%;
+        margin-top: 1em;
+        width: 80%;
     }
     #emojifiedMsg{
         font-size: 1.7em;
